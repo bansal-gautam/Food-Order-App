@@ -124,6 +124,6 @@ app
       .catch((err) => res.send(err));
   });
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log("App Listening on port " + process.env.PORT);
 });
